@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Upload an Image</h1>
+    <form  action="#" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".jpg, .jpeg, .png, .gif, .bmp" required>
+        <input type="submit" value="Upload">
+    </form>
+
+
+{% if text %}
+<h4>{{text}}</h4>
+{% else %}
+<h4> No selected file </h4>
+{% endif %}
+
+
+
+{% if img_path %}
+<img src="{{url_for('static',filename = 'uploads/'+img_path)}}" alt="" width="400px" height="400px">
+{% endif %}
+
+{% if rembg_path %}
+<h1>After</h1>
+<img src="{{url_for('static',filename = 'uploads/output_image.png')}}" alt="" width="400px" height="400px">
+{% endif %}
+
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+.text{
+    font-size: 25px;
+    font-weight: 700;
+  text-align: center;
+}
+.e{
+    margin-left: 250px;
+    margin-top: 150px;
+}
+.e .q{
+    padding: 7px 35px;
+}
+.z {
+display: flex;
+}
+.k{
+    margin-top: 240px;
+    margin-left: 200px;
+}
